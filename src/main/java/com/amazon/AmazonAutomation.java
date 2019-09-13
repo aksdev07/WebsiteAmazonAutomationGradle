@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 
 
     public void intialBrowserSetup(String URL) {
-        //add path of the chrome driver relative to your PC
+        //add path of the chrome driver relative to your PC.
         System.setProperty("webdriver.chrome.driver","D:\\chromedriver.exe");
 
 
