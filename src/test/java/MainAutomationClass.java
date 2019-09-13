@@ -10,8 +10,8 @@ public class MainAutomationClass {
         Var.intialBrowserSetup(AmazonResources.url);
         //This will hover over the login button
         Var.mouseHoverFunctionality(AmazonResources.loginXValue);
-        //this is to log in to the application
-       // Var.loginFunctionality(AmazonResources.loginUserID,AmazonResources.loginPassword);
+        //this is to log in to the application Change USER_ID and Password in AmazonResources.java
+         Var.loginFunctionality(AmazonResources.loginUserID,AmazonResources.loginPassword);
         //this will enter item name in the textfield
         Var.itemSearchFunctionality(AmazonResources.itemName);
         //this will filter out the prodcut in terms of highest rating

@@ -3,10 +3,6 @@ package com.amazon;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.time.Instant;
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
@@ -20,12 +16,10 @@ import java.util.concurrent.TimeUnit;
 
         System.setProperty("webdriver.chrome.driver","D:\\chromedriver.exe");
 
-        /*  To instantiate chrome without using driver
-         WebDriverManager.chromedriver().setup();
-         */
 
         driver = new ChromeDriver();
         driver.manage().window().maximize();
+        //Advance Users knows what to do with cookies
         //driver.manage().deleteAllCookies();
 
         //driver wait
@@ -139,7 +133,7 @@ import java.util.concurrent.TimeUnit;
 
 
       Thread.sleep(15000);
-    // driver.quit();
+      driver.quit();
 
   }
 
